@@ -1,5 +1,6 @@
 package toypz.hellospring.service;
 
+import org.springframework.transaction.annotation.Transactional;
 import toypz.hellospring.domain.Member;
 import toypz.hellospring.repository.MemberRepository;
 import toypz.hellospring.repository.MemoryMemberRepository;
@@ -7,6 +8,7 @@ import toypz.hellospring.repository.MemoryMemberRepository;
 import java.util.List;
 import java.util.Optional;
 
+@Transactional
 public class MemberService {
 
     private final MemberRepository memberRepository;
